@@ -10,12 +10,13 @@ source activate myenv
 
 Delete environment:
 ```
-TODO
+source deactivate myenv
+conda env remove --name myenv
 ```
 
 Install multiple packages (argument `-y` to omit the prompts):
 ```
-conda install -y numpy matplotlib scikit-learn
+conda install -y numpy pandas scikit-learn matplotlib seaborn plotly ipykernel
 # with specific versions:
 conda install -y seaborn==0.8.1 numpy==1.14.5 pandas==0.23.1 scikit-learn==0.19.1
 ```
