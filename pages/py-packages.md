@@ -30,9 +30,10 @@ conda install -y ipykernel
 ipython kernel install --user --name=myenv
 ```
 
-Delete jupyter kernel:
+Run `jupyter kernelspec list` to get the paths of all your kernels.
+Then simply uninstall your unwanted-kernel:
 ```
-TODO
+jupyter kernelspec uninstall unwanted-kernel
 ```
 
 ## Packages from Git
