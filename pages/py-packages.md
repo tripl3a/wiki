@@ -1,21 +1,29 @@
 # Python package management
 
+## virtualenv
+
+Activate virtual environment:
+
+```bash
+source venv/bin/activate
+```
+
 ## Conda
 
 Create and activate a new environment named `myenv`:
-```
+```bash
 conda create -n myenv
 source activate myenv
 ```
 
 Delete environment:
-```
+```bash
 source deactivate myenv
 conda env remove --name myenv
 ```
 
 Install multiple packages (argument `-y` to omit the prompts):
-```
+```bash
 conda install -y numpy pandas scikit-learn matplotlib seaborn plotly ipykernel
 # with specific versions:
 conda install -y seaborn==0.8.1 numpy==1.14.5 pandas==0.23.1 scikit-learn==0.19.1
@@ -24,7 +32,7 @@ conda install -y seaborn==0.8.1 numpy==1.14.5 pandas==0.23.1 scikit-learn==0.19.
 ## Jupyter
 
 To make the virtual environment available within jupyter:  
-```
+```bash
 source activate myenv
 conda install -y ipykernel
 ipython kernel install --user --name=myenv
@@ -32,7 +40,7 @@ ipython kernel install --user --name=myenv
 
 Run `jupyter kernelspec list` to get the paths of all your kernels.
 Then simply uninstall your unwanted-kernel:
-```
+```bash
 jupyter kernelspec uninstall unwanted-kernel
 ```
 
@@ -40,6 +48,6 @@ jupyter kernelspec uninstall unwanted-kernel
 
 Install a package from GitHub:
 
-```
+```bash
 pip install git+https://github.com/jkbr/httpie.git
 ```
