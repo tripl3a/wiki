@@ -1,5 +1,27 @@
 # Git commands
 
+
+## “pull request” a specific commit
+
+Create a new branch with just that change:
+
+```bash
+$ git fetch --all
+$ git checkout -b my-single-change upstream/master
+$ git cherry-pick b50b2e7
+$ git push -u origin my-single-change
+```
+
+Then create the PR from that branch.
+
+The above assumes you've set up upstream as a remote. If not, do this first:
+
+```bash
+git remote add upstream https://github.com/user/repo.git
+```
+
+Source: https://stackoverflow.com/a/34027874
+
 ## New repository
 
 ```
