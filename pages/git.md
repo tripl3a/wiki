@@ -23,6 +23,8 @@ git fetch upstream
 git pull upstream master
 ```
 
+Source: https://gist.github.com/CristinaSolana/1885435
+
 ## “pull request” a specific commit
 
 Create a new branch with just that change:
