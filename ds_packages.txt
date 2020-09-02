@@ -1,4 +1,0 @@
-conda installl -y numpy pandas scikit-learn matplotlib seaborn plotly
-
-pip install pandas_profiling
-pip install git+https://github.com/WillKoehrsen/feature-selector
